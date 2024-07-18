@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Minimal & Modern boilerplate for building apps with React & styled-components",
     "scripts": {
-        "start": "NODE_ENV=development webpack-dev-server",
+        "start": "set NODE_OPTIONS=--openssl-legacy-provider && NODE_ENV=development webpack-dev-server",
         "build": "NODE_ENV=production webpack",
         "now-build": "npm run build",
         "test": "xo && stylelint './src/**/*.js' && jest",
@@ -55,7 +55,9 @@
         "modern-normalize": "^1.0.0",
         "react": "16.13.1",
         "react-dom": "16.13.1",
-        "styled-components": "^5.2.0"
+        "styled-components": "^5.2.0",
+        "web3": "1.2.2",
+        "win-node-env": "^0.6.1"
     },
     "xo": {
         "nodeVersion": ">=10",
